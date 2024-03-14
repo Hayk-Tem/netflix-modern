@@ -1,0 +1,7 @@
+.cast-list {
+  display: flex;
+  /* align-items: center; */
+  gap: 8px;
+  margin: 20px 0;
+  padding: 8px;
+}

@@ -1,0 +1,16 @@
+.cast-track {
+  /* max-width: 1200px; */
+  overflow: auto;
+}
+
+.cast-track::-webkit-scrollbar {
+  width: 0px;
+  height: 6px;
+  background: #333333d0;
+  border-radius: 1000px;
+}
+
+.cast-track::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}

@@ -1,0 +1,46 @@
+.pagination {
+  max-width: 800px;
+  /* border-radius: 1000px; */
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+.pagination::-webkit-scrollbar {
+  height: 4px;
+}
+
+.pagination>.track {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  /* width: var(--width); */
+}
+
+.pagination>.track>._item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  background: #333;
+  color: white;
+  transition: .3s;
+}
+
+
+.pagination>.track>._item::before {
+  content: attr(data-label);
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagination>.track>._item:hover,
+.pagination>.track>._item:focus {
+  cursor: pointer;
+  outline: rgb(0, 183, 255);
+  box-shadow: 0 0 2px 2px rgb(0, 183, 255);
+}

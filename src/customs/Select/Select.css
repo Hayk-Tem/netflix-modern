@@ -1,0 +1,36 @@
+.custom-select {
+  position: relative;
+  background: #2222228c;
+  max-width: 256px;
+  list-style-type: none;
+  color: white;
+}
+
+.custom-select>._group {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 999;
+  max-height: 256px;
+  overflow-y: scroll;
+}
+
+.custom-select>._group>.__option {
+  width: 100%;
+  padding: 8px 16px;
+  background: #2222228c;
+  border-bottom: 1px solid #252525;
+  display: none;
+}
+
+.custom-select>._group>.__option:hover {
+  cursor: pointer;
+  background-color: crimson;
+}
+
+.custom-select>._default {
+  width: 100%;
+  padding: 8px 16px;
+  background: #222222ac;
+}
